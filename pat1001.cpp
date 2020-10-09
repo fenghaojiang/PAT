@@ -1,3 +1,5 @@
+//数字规律
+
 #include<iostream>
 using namespace std;
 
