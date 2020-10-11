@@ -4,6 +4,8 @@
 #include<algorithm>
 using namespace std;
 
+//字符串操作 经典排序
+
 bool cmp1(string a, string b) {
 	return a+b < b+a;
 }
