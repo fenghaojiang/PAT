@@ -60,6 +60,5 @@ int main()
 		}
 	}
 	printf("%d %d", num[c2], way[c2]);
-	system("pause");
 	return 0;
 }
