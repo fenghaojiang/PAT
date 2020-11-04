@@ -19,7 +19,7 @@ int main() {
 			first = i;
 		}
 	}
-	if(first == 0) cout << 1 << endl << num; //first的值没有改变证明是1或者是素数
+	if(first == 0) cout << 1 << endl << num; //first鐨勫�兼病鏈夋敼鍙樿瘉鏄庢槸1鎴栬�呮槸绱犳暟
 	else {
 		cout << len << endl;
 		for(int i = 0; i < len; i++) {
