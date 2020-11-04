@@ -1,7 +1,7 @@
 #include<iostream>
 #include<cstdio>
 using namespace std;
-int dist[501], weight[501], num[501], road[501][501], way[501];/*way为到城市i途中总共的救援队  num[i]：从出发点到i结点最短路径的条数*/
+int dist[501], weight[501], num[501], road[501][501], way[501];/*way涓哄埌鍩庡競i閫斾腑鎬诲叡鐨勬晳鎻撮槦  num[i]锛氫粠鍑哄彂鐐瑰埌i缁撶偣鏈�鐭矾寰勭殑鏉℃暟*/
 bool visit[501];
 const int maxint = 999999999;
 
@@ -21,7 +21,7 @@ int main()
 	for (int i = 0; i < roadnum; i++)
 	{
 		scanf("%d%d%d", &city1, &city2, &r);
-		road[city2][city1] = road[city1][city2] = r;   /*无向图*/
+		road[city2][city1] = road[city1][city2] = r;   /*锟斤拷锟斤拷图*/
 	}
 	for (int i = 0; i < 501; i++)
 	{
