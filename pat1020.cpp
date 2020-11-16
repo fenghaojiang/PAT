@@ -38,7 +38,7 @@ void bfs(node* root){
 		printf("%d",now->data);
 		num++;
 		if(num<n) printf(" ");
-		if(now->lchild!=NULL) q.push(now->lchild);
+		if(now->lchild!=NULL) q.push(now->lchild); //先进先出
 		if(now->rchild!=NULL) q.push(now->rchild);
     }
 }
@@ -46,10 +46,10 @@ void bfs(node* root){
 int main(){
 	scanf("%d",&n);
 	for(int i=0;i<n;i++){
-		scanf("%d",&post[i]);
+		scanf("%d",&post[i]); //后序
 	}
 	for(int i=0;i<n;i++){
-		scanf("%d",&in[i]);
+		scanf("%d",&in[i]); //中序
 	}
 	node* root=create(0,n-1,0,n-1);
 	bfs(root);
